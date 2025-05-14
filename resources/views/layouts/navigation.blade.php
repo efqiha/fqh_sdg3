@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    
+                    <!-- Add your logo here -->
                 </div>
 
                 <!-- Navigation Links -->
@@ -95,4 +95,77 @@
             </div>
         </div>
     </div>
+
+    <!-- Styling -->
+    <style>
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #374151;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #10b981;
+        }
+
+        .nav-link-active {
+            color: #10b981;
+            border-bottom: 2px solid #10b981;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hamburger-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hamburger-button svg {
+            width: 24px;
+            height: 24px;
+            stroke-width: 2;
+        }
+
+        .responsive-nav-link {
+            padding: 0.75rem 1rem;
+            color: #374151;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .responsive-nav-link:hover {
+            background-color: #f3f4f6;
+        }
+
+        .responsive-nav-link-active {
+            background-color: #10b981;
+            color: white;
+        }
+    </style>
 </nav>
