@@ -1,27 +1,55 @@
 <x-app-layout>
     <style>
-        body {
-            background-color: #f9fafb;
-            font-family: Arial, sans-serif;
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         h1 {
-            color: #2c3e50;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
         }
 
         table {
-            border-collapse: collapse;
             width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
         }
 
         th, td {
             padding: 10px;
-            border: 1px solid #ccc;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: left;
         }
 
-        a {
-            color: #3490dc;
-            text-decoration: none;
+        .actions a {
+            margin-right: 8px;
+            color: #2563eb;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
+        .actions form {
+            display: inline;
         }
     </style>
     <x-slot name="header">
