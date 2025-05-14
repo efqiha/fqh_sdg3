@@ -1,5 +1,5 @@
 <x-app-layout>
-     <style>
+    <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f9fafb;
@@ -14,11 +14,15 @@
         .btn-primary {
             background-color: #2563eb;
             color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
             text-decoration: none;
             display: inline-block;
             margin-bottom: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s ease;
         }
 
         .btn-primary:hover {
@@ -96,16 +100,26 @@
             font: inherit;
             cursor: pointer;
         }
+
+        .page-header {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
     </style>
+
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="page-header">
             Daftar Artikel
         </h2>
     </x-slot>
 
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <a href="{{ route('articles.create') }}" class="bg-blue-600 text-black px-4 py-2 rounded-md mb-4 inline-block">+ Tambah Artikel</a>
+            <a href="{{ route('articles.create') }}" class="btn-primary">+ Tambah Artikel</a>
 
             @if (session('success'))
                 <div class="bg-green-100 text-green-700 p-3 rounded mb-4">
