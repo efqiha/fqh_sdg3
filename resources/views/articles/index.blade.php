@@ -1,52 +1,100 @@
 <x-app-layout>
      <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar {
-            background-color: #0d6efd;
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar .title {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-left: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
         }
 
         .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            background-color: white;
-            padding: 2rem;
+            max-width: 1120px;
+            margin: 24px auto;
+            padding: 0 1rem;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .alert-success {
+            background-color: #d1fae5;
+            color: #065f46;
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .card {
+            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
         }
 
-        h1 {
-            color: #333;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
         }
 
-        p {
-            color: #555;
-            line-height: 1.6;
+        thead th {
+            text-align: left;
+            font-weight: 600;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #e5e7eb;
+            color: #374151;
         }
 
-        strong {
-            font-weight: bold;
+        tbody td {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            color: #374151;
+            vertical-align: top;
+        }
+
+        .action-links a {
+            margin-right: 0.75rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .action-links a:hover {
+            text-decoration: underline;
+        }
+
+        .text-red {
+            color: #dc2626;
+        }
+
+        .text-indigo {
+            color: #4f46e5;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-muted {
+            color: #9ca3af;
+        }
+
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
         }
     </style>
     <x-slot name="header">
