@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <style>
-        body, html {
+        html, body {
             height: 100%;
             margin: 0;
             font-family: 'Nunito', sans-serif;
@@ -9,11 +9,18 @@
             color: #374151;
         }
 
-        .form-container {
+        .form-wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
+            flex-direction: column;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
         }
 
         form {
@@ -122,7 +129,9 @@
         }
     </style>
 
-    <div class="form-container">
+    <div class="form-wrapper">
+        <div class="form-title">Login</div>
+
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
