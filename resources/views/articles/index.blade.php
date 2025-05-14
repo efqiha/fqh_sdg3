@@ -1,6 +1,6 @@
 <x-app-layout>
     <head>
-        <link rel="stylesheet" href="../../../public/build/css/style.css">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
