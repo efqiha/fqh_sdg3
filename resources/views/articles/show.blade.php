@@ -1,31 +1,7 @@
 <x-app-layout>
-     <style>
-        .container {
-            max-width: 700px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        h2 {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        a {
-            color: #2563eb;
-            text-decoration: underline;
-            display: inline-block;
-            margin-top: 20px;
-        }
-    </style>
+    <head>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    </head>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">{{ $article->title }}</h2>
     </x-slot>

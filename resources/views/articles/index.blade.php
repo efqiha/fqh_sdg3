@@ -1,57 +1,7 @@
 <x-app-layout>
-    <style>
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #2563eb;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 16px;
-        }
-
-        th, td {
-            padding: 10px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: left;
-        }
-
-        .actions a {
-            margin-right: 8px;
-            color: #2563eb;
-            text-decoration: underline;
-            font-size: 14px;
-        }
-
-        .actions form {
-            display: inline;
-        }
-    </style>
+    <head>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    </head>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             Daftar Artikel
