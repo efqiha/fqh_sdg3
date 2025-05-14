@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <style>
-        html, body {
+        body, html {
             height: 100%;
             margin: 0;
             font-family: 'Nunito', sans-serif;
@@ -9,18 +9,11 @@
             color: #374151;
         }
 
-        .form-wrapper {
+        .form-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
-        }
-
-        .form-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-            text-align: center;
         }
 
         form {
@@ -129,11 +122,9 @@
         }
     </style>
 
-    <div class="form-wrapper">
+    <div class="form-container">
         <form method="POST" action="{{ route('login') }}">
             @csrf
-
-            <div class="form-title">Login</div>
 
             <!-- Session Status -->
             <x-auth-session-status class="mb-4" :status="session('status')" />
