@@ -14,13 +14,13 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            flex-direction: column;
         }
 
         .form-title {
             font-size: 1.5rem;
             font-weight: bold;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
         }
 
         form {
@@ -130,10 +130,10 @@
     </style>
 
     <div class="form-wrapper">
-        <div class="form-title">Login</div>
-
         <form method="POST" action="{{ route('login') }}">
             @csrf
+
+            <div class="form-title">Login</div>
 
             <!-- Session Status -->
             <x-auth-session-status class="mb-4" :status="session('status')" />
